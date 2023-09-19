@@ -1,9 +1,9 @@
 import express, {Router} from 'express';
-import { getUserById } from '../../controllers/user';
+import { getUserById, updateUserById } from '../../controllers/user';
 
 const userRoute: Router = express.Router();
 
 userRoute.get('/current', getUserById);
-userRoute.get
+userRoute.get('/update', updateUserById);
 
 export default userRoute;
